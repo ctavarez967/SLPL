@@ -4,11 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
 
     <title>South Liberty Public Library</title>
 
@@ -32,7 +28,7 @@
 </head>
 
 <body>
-
+    <form id="form1" runat="server">
     <div class="brand">South Liberty Public Liberty</div>
     <div class="address-bar">3481 Melrose Place | South Liberty, IA 56595 | 319.456.7890</div>
 
@@ -54,22 +50,20 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="default.aspx">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.aspx">About</a>
                     </li>
+                    
                     <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.aspx">Contact Us</a>
                     </li>
                     <li>
                         <a href="myaccount.html">My Account</a>
                     </li>
                     <li>
-                        <a href="Login/Login.aspx">Login</a>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
                     </li>
                 </ul>
             </div>
@@ -78,13 +72,14 @@
         <!-- /.container -->
     </nav>
 
-    <form id="form1" runat="server">
+    
     <div class="box">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
 
 
         </asp:ContentPlaceHolder>
     </div>
+  </form>
         <footer>
         <div class="container">
             <div class="row">
@@ -107,6 +102,6 @@
             interval: 5000 //changes the speed
         })
     </script>
-    </form>
+    
 </body>
 </html>
