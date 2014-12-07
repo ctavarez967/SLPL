@@ -57,7 +57,7 @@
                     </li>
                     
                     <li>
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Contact.aspx">Patron</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink>
                     </li>
                     <li>
                         <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" >

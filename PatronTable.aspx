@@ -1,13 +1,9 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="PatronTableWithoutMaster.aspx.vb" Inherits="DefaultWithoutMaster" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/SLPLMasterPage.master" AutoEventWireup="false" CodeFile="PatronTable.aspx.vb" Inherits="PatronTable" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
     <div>
     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT [PatronID], [PatronFirst], [PatronLast], [Address], [DateOfBirth], [Email], [Zip], [PhoneNumber], [State], [City] FROM [Project_Patron]"></asp:SqlDataSource>
@@ -32,6 +28,6 @@
         <br />
     
     </div>
-    </form>
-</body>
-</html>
+
+</asp:Content>
+
