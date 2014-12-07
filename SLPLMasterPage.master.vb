@@ -3,6 +3,9 @@ Partial Class SLPLMasterPage
     Inherits System.Web.UI.MasterPage
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+        lbl_Date.Text = System.DateTime.Now
+
+
 
         If Not Roles.IsUserInRole("r_administrator") Then
             Dim menuItems As MenuItemCollection = Menu2.Items

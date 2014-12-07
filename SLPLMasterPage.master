@@ -93,16 +93,19 @@
 
         </asp:ContentPlaceHolder>
     </div>
-  </form>
         <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; MSCI 3300 University of Iowa 2014</p>
+                    <p>Copyright &copy; MSCI 3300 University of Iowa 2014&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lbl_Date" runat="server"></asp:Label>
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
+
+  </form>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
