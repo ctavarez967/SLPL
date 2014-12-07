@@ -18,6 +18,7 @@
                 <asp:BoundField DataField="ISBN" HeaderText="ISBN" SortExpression="ISBN" />
                 <asp:BoundField DataField="Call_Number" HeaderText="Call Number" SortExpression="Call_Number" />
                 <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+                <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="MaterialDetails.aspx?ID={0}" Text="View" />
             </Columns>
         </asp:GridView>
         <br />
