@@ -47,26 +47,40 @@
                 <a class="navbar-brand" href="index.html">South Liberty Public Library</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="default.aspx">Home</a>
+                         <a href="default.aspx">Home</a>
                     </li>
                     <li>
                         <a href="about.aspx">About</a>
                     </li>
                     
                     <li>
-                        <a href="contact.aspx">Contact Us</a>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Contact.aspx">Patron</asp:HyperLink>
                     </li>
                     <li>
-                        <a href="myaccount.html">My Account</a>
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" >
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Librarian/Default.aspx" Text="Librarian" Value="Librarian"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                        
                     </li>
                     <li>
-                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" >
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Admin" Value="Admin"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </li>
+                    <li>
+                        <div class="login_status">
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                        </div> <!-- close the login_status DIV -->
                     </li>
                 </ul>
-            </div>
+           </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->

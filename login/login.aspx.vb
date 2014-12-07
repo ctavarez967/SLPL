@@ -5,7 +5,7 @@ Partial Class login_login
     'Have the cursor automatically appear in the username box so the user doesn't have to click into the box.
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-
+        Login1.Focus()
 
     End Sub
 
@@ -19,7 +19,7 @@ Partial Class login_login
             Response.Redirect("~/Librarian/default.aspx")
 
         ElseIf Roles.IsUserInRole(Login1.UserName, "r_User") = True Then
-            Response.Redirect("~/Users/default.aspx")
+            Response.Redirect("~/Patron/default.aspx")
 
         Else : Response.Redirect("default.aspx")
 
