@@ -40,25 +40,25 @@
                     <hr>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/Kellen.jpg" alt="">
                     <h3>   Kellen Roberts
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/vinnie pizzo.jpg" alt="">
                     <h3>   Vincent Pizzo
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/Kellen.jpg" alt="">
                     <h3>Cristian Tavarez
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/kyle boyda.jpg" alt="">
                     <h3>   Kyle Boyda
                         <small>Intern</small>
                     </h3>
@@ -70,10 +70,5 @@
     </div>
     <!-- /.container -->
     
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </asp:Content>
 
