@@ -65,21 +65,28 @@
                         <a href="#" id="librarian" data-toggle="dropdown" class="dropdown-toggle">Librarian<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><asp:HyperLink ID="OverdueReport" runat="server" NavigateUrl="~/librarian/overDue.aspx">OverDue Report</asp:HyperLink></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/rentMaterial.aspx">Rent</asp:HyperLink></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/returnMaterial.aspx">Return</asp:HyperLink></li>
-                               <li><asp:HyperLink ID="Rented" runat="server" NavigateUrl="~/librarian/viewAllRentals.aspx">Currently Rented</asp:HyperLink></li>
+                               <li>
+                                   <asp:HyperLink runat="server" NavigateUrl="~/librarian/rentMaterial.aspx">Rent</asp:HyperLink></li>
+                               <li>
+                                   <asp:HyperLink runat="server" NavigateUrl="~/librarian/returnMaterial.aspx">Return</asp:HyperLink></li>
+                               <li>
+                                   <asp:HyperLink ID="Rented" runat="server" NavigateUrl="~/librarian/viewAllRentals.aspx">Currently Rented</asp:HyperLink></li>
                                <li class="divider"></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/AddPatron.aspx">Add a New Patron</asp:HyperLink></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/PatronTable.aspx">View Patrons</asp:HyperLink></li>
+                               <li>
+                                   <asp:HyperLink runat="server" NavigateUrl="~/librarian/AddPatron.aspx">Add a New Patron</asp:HyperLink></li>
+                               <li>
+                                   <asp:HyperLink runat="server" NavigateUrl="~/librarian/PatronTable.aspx">View Patrons</asp:HyperLink></li>
                                <li class="divider"></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/addNewMaterial.aspx">Add New Material</asp:HyperLink></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/MaterialsTable.aspx">View Material</asp:HyperLink></li>
+                               <li>
+                                   <asp:HyperLink runat="server" NavigateUrl="~/librarian/addNewMaterial.aspx">Add New Material</asp:HyperLink></li>
+                               <li>
+                                   <asp:HyperLink runat="server" NavigateUrl="~/librarian/MaterialsTable.aspx">View Material</asp:HyperLink></li>
                                
                             </ul>
                         </li>
                     
                     <li>
-                        <asp:HyperLink ID="materials" runat="server" NavigateUrl="~/Librarian/MaterialsTable.aspx">Materials</asp:HyperLink>
+                        <asp:HyperLink ID="materials" runat="server" NavigateUrl="~/SearchMaterials.aspx">Materials</asp:HyperLink>
                     </li>
                    
                     <li>
