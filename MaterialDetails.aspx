@@ -36,11 +36,9 @@
                 <asp:Parameter Name="ID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-<<<<<<< HEAD
+
          <asp:Image ID="Image1" runat="server" Height="174px" ImageUrl='<%# Eval("url", "~/images/{0}")%>' />
-=======
-         <asp:Image ID="Image1" runat="server" Height="165px" Width="125px" ImageUrl='<%# Eval("url", "~/images/{0}")%>' />
->>>>>>> vinnie
+
         <br />
          <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="ID" DataSourceID="SqlDataSource1">
              <EditItemTemplate>
@@ -130,7 +128,7 @@
                  Description:
                  <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Bind("Description") %>' />
                  <br />
-<<<<<<< HEAD
+
                  <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
                  &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
                  &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
@@ -138,11 +136,7 @@
          </asp:FormView>
          <br />
          <asp:Label ID="lbl_statement" runat="server"></asp:Label>
-=======
 
-             </ItemTemplate>
-         </asp:FormView>
->>>>>>> vinnie
     
     </div>
 
