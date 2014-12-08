@@ -69,8 +69,8 @@
                                <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/returnMaterial.aspx">Return</asp:HyperLink></li>
                                <li><asp:HyperLink ID="Rented" runat="server" NavigateUrl="~/librarian/viewAllRentals.aspx" >Currently Rented</asp:HyperLink></li>
                                <li class="divider"></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/addNewPatron.aspx">Add a New Patron</asp:HyperLink></li>
-                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/PatronTable.aspx">View Patrons</asp:HyperLink></li>
+                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/AddPatron.aspx">Add a New Patron</asp:HyperLink></li>
+                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/PatronSearch.aspx">View Patrons</asp:HyperLink></li>
                                <li class="divider"></li>
                                <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/addNewMaterial.aspx">Add New Material</asp:HyperLink></li>
                                <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/MaterialsTable.aspx">View Material</asp:HyperLink></li>

@@ -92,6 +92,7 @@
                  <br />
                  Title:
                  <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
+                 <asp:RequiredFieldValidator ID="rfv_Title" runat="server" ErrorMessage="Please enter the Title" CssClass="validationError" ControlToValidate="TitleTextBox"></asp:RequiredFieldValidator>
                  <br />
                  Author:
                  <asp:TextBox ID="AuthorTextBox" runat="server" Text='<%# Bind("Author") %>' />
@@ -104,9 +105,11 @@
                  <br />
                  ISBN:
                  <asp:TextBox ID="ISBNTextBox" runat="server" Text='<%# Bind("ISBN") %>' />
+                 <asp:RequiredFieldValidator ID="rfv_ISBN" runat="server" ErrorMessage="Please enter the ISBN" CssClass="validationError" ControlToValidate="ISBNTextBox"></asp:RequiredFieldValidator>
                  <br />
                  Call_Number:
                  <asp:TextBox ID="Call_NumberTextBox" runat="server" Text='<%# Bind("Call_Number") %>' />
+                 <asp:RequiredFieldValidator ID="rfv_Call_Number" runat="server" ErrorMessage="Please enter the material's Call Number" CssClass="validationError" ControlToValidate="Call_NumberTextBox"></asp:RequiredFieldValidator>
                  <br />
                  Description:
                  <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
