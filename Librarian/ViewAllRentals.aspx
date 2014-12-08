@@ -3,6 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+            <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    
+    
     <div class="">
         <p>Current Rentals</p>
     </div>
@@ -22,9 +28,5 @@
         <asp:BoundField DataField="DateDueBack" HeaderText="Due Date" SortExpression="DateDueBack" />
     </Columns>
 </asp:GridView>
-
-
-
-
 </asp:Content>
 

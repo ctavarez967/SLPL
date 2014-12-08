@@ -50,6 +50,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+
                     <li>
                         <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink>
                     </li>
@@ -68,16 +69,15 @@
                                <li>
                                    <asp:HyperLink runat="server" NavigateUrl="~/Librarian/ReturnMaterial.aspx">Return a Material</asp:HyperLink></li>
                                <li>
-                                   <asp:HyperLink ID="Rented" runat="server" NavigateUrl="~/Librarian/ViewAllRentals.aspx">Currently Rented</asp:HyperLink></li>
-                               <li class="divider"></li><li class="divider"></li>
-                               <li style="color:red">
                                    <asp:HyperLink ID="OverdueReport" runat="server" NavigateUrl="~/librarian/OverdueReport.aspx">Over Due Materials</asp:HyperLink></li>
-                               <li class="divider"></li><li class="divider"></li>
+                               <li>
+                                   <asp:HyperLink ID="Rented" runat="server" NavigateUrl="~/Librarian/ViewAllRentals.aspx">Currently Rented</asp:HyperLink></li>
+                               <li class="divider"></li>
                                <li>
                                    <asp:HyperLink runat="server" NavigateUrl="~/Librarian/AddPatron.aspx">Add a New Patron</asp:HyperLink></li>
                                <li>
                                    <asp:HyperLink runat="server" NavigateUrl="~/Librarian/PatronSearch.aspx">View Patrons</asp:HyperLink></li>
-                               <li class="divider"></li><li class="divider"></li>
+                               <li class="divider"></li>
                                <li>
                                    <asp:HyperLink runat="server" NavigateUrl="~/Librarian/AddMaterial.aspx">Add New Material</asp:HyperLink></li>
                                <li>
