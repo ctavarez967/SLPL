@@ -37,8 +37,15 @@
             </UpdateParameters>
         </asp:SqlDataSource>
 
-         <asp:Image ID="Image1" runat="server" Height="174px" ImageUrl='<%# Eval("url", "~/images/{0}")%>' />
-
+         <asp:DataList ID="materialsPhotoDataList" runat="server" DataSourceID="SqlDataSource1">
+         <ItemTemplate>
+             <image ID="Image1" runat="server" 
+                 Height="150px"
+                 AlternateText='<%# Eval("photoDesc")%>'
+                 ImageUrl='<%# Eval("Photo", "~/images/{0}")%>' 
+                 Tooltip='<%# Eval("photoDesc") %>'/>
+         </ItemTemplate>
+         </asp:DataList>
         <br />
          <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="ID" DataSourceID="SqlDataSource1">
              <EditItemTemplate>
