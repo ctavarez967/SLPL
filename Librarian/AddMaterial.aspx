@@ -145,12 +145,7 @@
         </asp:FormView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT * FROM [Project_Materials]"></asp:SqlDataSource>
         <br />
-    </>
     <br />
-     <div class="footer"> 
-          @ Site Developed for Software Design and Development MSCI3300, Univeristy of Iowa 2014, All rights Reserved.
-     Iowa 2014, All rights Reserved.
-    </div>
 
 
 </asp:Content>

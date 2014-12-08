@@ -10,6 +10,7 @@
 
 
 
+
 .validationError {
     font-weight: bold;
     color: red;
@@ -2067,7 +2068,6 @@ pre code {
 table {
   background-color: transparent;
     text-align: center;
-    margin-right: 3px;
 }
 caption {
   padding-top: 8px;

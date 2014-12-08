@@ -20,8 +20,8 @@
 
     <div style="width:68%;padding-right: 5%; padding-left: 2%; float:left;">
                     <hr>
-                    <h2 class="intro-text text-center">Build a website
-                        <strong>worth visiting</strong>
+                    <h2 class="intro-text text-center">What is a 
+                        <strong>Library</strong>
                     </h2>
                     <hr>
                     <img class="img-responsive img-border img-left" src="img/books.png" alt="">

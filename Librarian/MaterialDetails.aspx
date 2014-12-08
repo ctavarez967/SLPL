@@ -48,7 +48,7 @@
                  <br />
 
         <br />
-         <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="ID" DataSourceID="SqlDataSource1">
+         <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="ID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333">
              
              <EditItemTemplate>
    
@@ -88,6 +88,9 @@
                  <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
                  &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
              </EditItemTemplate>
+             <EditRowStyle BackColor="#999999" />
+             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+             <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
              <InsertItemTemplate>
                  Type:
                  <asp:TextBox ID="TypeTextBox" runat="server" Text='<%# Bind("Type") %>' />
@@ -165,6 +168,8 @@
                  &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
                  &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
              </ItemTemplate>
+             <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+             <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
              </asp:FormView>
 
          

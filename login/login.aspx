@@ -6,17 +6,23 @@
     <br />
     <br />
 
-<table class="table">   
+<table class="table" style="align-content:center">   
     
        <tr> 
            <td>
                <asp:Panel ID="Loginpanel" runat="server" DefaultButton="Login1$LoginButton"> 
-                    <asp:Login ID="Login1" runat="server" Height="238px" Width="494px" margin="auto"></asp:Login>
+                    <asp:Login ID="Login1" runat="server" Height="238px" Width="494px" margin="auto" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333">
+                        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                        <LoginButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
+                        <TextBoxStyle Font-Size="0.8em" />
+                        <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+                    </asp:Login>
                </asp:Panel>
             </td>      
        </tr>
    
 </table>
+
                     <!-- jQuery -->
         <!-- jQuery -->
     <script src="../js/jquery.js"></script>
