@@ -59,6 +59,12 @@
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="" alt=""/>
+                    <h3>
+                        <small></small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
                     <img class="img-responsive" src="img/Kyle1.jpg" alt="Kyle Boyda"/>
                     <h3>Kyle Boyda
                         <small>Intern</small>
