@@ -6,7 +6,11 @@
     Search by Last Name: <br />
     <asp:TextBox ID="tb_LName" runat="server"></asp:TextBox>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT * FROM [Project_Patron]"></asp:SqlDataSource>
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowSorting="True">
+        <Columns>
+            <asp:HyperLinkField DataNavigateUrlFields="PatronID" DataNavigateUrlFormatString="PatronDetails.aspx?PatronID={0}" Text="Select" />
+        </Columns>
+    </asp:GridView>
 
 
 
