@@ -5,7 +5,35 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
      <div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT [ID], [Author], [Title], [Publisher], [Copyright], [ISBN], [Call_Number], [Type], [Description], [Photo], [photoDesc] FROM [Project_Materials]">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT [ID], [Type], [Title], [Author], [Publisher], [Copyright], [ISBN], [Call_Number], [Description], [Photo], [photoDesc] FROM [Project_Materials] WHERE ([ID] = @ID)" DeleteCommand="DELETE FROM [Project_Materials] WHERE [ID] = @ID" InsertCommand="INSERT INTO [test_Materials] ([ID], [Type], [CallNumber], [Title], [Author], [Publisher], [Copyright], [ISBN], [Availability]) VALUES (@ID, @Type, @CallNumber, @Title, @Author, @Publisher, @Copyright, @ISBN, @Availability)" UpdateCommand="UPDATE [Project_Materials] SET [Type] = @Type, [CallNumber] =@CallNumber, [Title] = @Title, [Author] = @Author, [Publisher] = @Publisher, [Copywrite] = @Copywrite, [ISBN] = @ISBN, [Availability] = @Availability WHERE [ID] = @ID">
+            <DeleteParameters>
+                <asp:Parameter Name="ID" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="ID" />
+                <asp:Parameter Name="Type" />
+                <asp:Parameter Name="CallNumber" />
+                <asp:Parameter Name="Title" />
+                <asp:Parameter Name="Author" />
+                <asp:Parameter Name="Publisher" />
+                <asp:Parameter Name="Copyright" />
+                <asp:Parameter Name="ISBN" />
+                <asp:Parameter Name="Availability" />
+            </InsertParameters>
+            <SelectParameters>
+                <asp:QueryStringParameter DefaultValue="" Name="ID" QueryStringField="ID" Type="Int32" />
+            </SelectParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="Type" />
+                <asp:Parameter Name="CallNumber" />
+                <asp:Parameter Name="Title" />
+                <asp:Parameter Name="Author" />
+                <asp:Parameter Name="Publisher" />
+                <asp:Parameter Name="Copywrite" />
+                <asp:Parameter Name="ISBN" />
+                <asp:Parameter Name="Availability" />
+                <asp:Parameter Name="ID" />
+            </UpdateParameters>
         </asp:SqlDataSource>
 
                  <br />
@@ -18,11 +46,14 @@
                  ID:
                  <asp:Label ID="IDLabel1" runat="server" Text='<%# Eval("ID") %>' />
                  <br />
-                 Author:
-                 <asp:TextBox ID="AuthorTextBox" runat="server" Text='<%# Bind("Author") %>' />
+                 Type:
+                 <asp:TextBox ID="TypeTextBox" runat="server" Text='<%# Bind("Type") %>' />
                  <br />
                  Title:
                  <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
+                 <br />
+                 Author:
+                 <asp:TextBox ID="AuthorTextBox" runat="server" Text='<%# Bind("Author") %>' />
                  <br />
                  Publisher:
                  <asp:TextBox ID="PublisherTextBox" runat="server" Text='<%# Bind("Publisher") %>' />
@@ -35,9 +66,6 @@
                  <br />
                  Call_Number:
                  <asp:TextBox ID="Call_NumberTextBox" runat="server" Text='<%# Bind("Call_Number") %>' />
-                 <br />
-                 Type:
-                 <asp:TextBox ID="TypeTextBox" runat="server" Text='<%# Bind("Type") %>' />
                  <br />
                  Description:
                  <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
@@ -52,11 +80,14 @@
                  &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
              </EditItemTemplate>
              <InsertItemTemplate>
-                 Author:
-                 <asp:TextBox ID="AuthorTextBox" runat="server" Text='<%# Bind("Author") %>' />
+                 Type:
+                 <asp:TextBox ID="TypeTextBox" runat="server" Text='<%# Bind("Type") %>' />
                  <br />
                  Title:
                  <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
+                 <br />
+                 Author:
+                 <asp:TextBox ID="AuthorTextBox" runat="server" Text='<%# Bind("Author") %>' />
                  <br />
                  Publisher:
                  <asp:TextBox ID="PublisherTextBox" runat="server" Text='<%# Bind("Publisher") %>' />
@@ -69,9 +100,6 @@
                  <br />
                  Call_Number:
                  <asp:TextBox ID="Call_NumberTextBox" runat="server" Text='<%# Bind("Call_Number") %>' />
-                 <br />
-                 Type:
-                 <asp:TextBox ID="TypeTextBox" runat="server" Text='<%# Bind("Type") %>' />
                  <br />
                  Description:
                  <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
@@ -86,16 +114,18 @@
                  &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
              </InsertItemTemplate>
              <ItemTemplate>
-                
-                 
+                 <asp:Image Height="150px" ID="Image1" runat="server" ImageUrl='<%# Eval("Photo", "~/images/{0}")%>' /> <br />
                  ID:
                  <asp:Label ID="IDLabel" runat="server" Text='<%# Eval("ID") %>' />
                  <br />
-                 Author:
-                 <asp:Label ID="AuthorLabel" runat="server" Text='<%# Bind("Author") %>' />
+                 Type:
+                 <asp:Label ID="TypeLabel" runat="server" Text='<%# Bind("Type") %>' />
                  <br />
                  Title:
                  <asp:Label ID="TitleLabel" runat="server" Text='<%# Bind("Title") %>' />
+                 <br />
+                 Author:
+                 <asp:Label ID="AuthorLabel" runat="server" Text='<%# Bind("Author") %>' />
                  <br />
                  Publisher:
                  <asp:Label ID="PublisherLabel" runat="server" Text='<%# Bind("Publisher") %>' />
@@ -109,9 +139,6 @@
                  Call_Number:
                  <asp:Label ID="Call_NumberLabel" runat="server" Text='<%# Bind("Call_Number") %>' />
                  <br />
-                 Type:
-                 <asp:Label ID="TypeLabel" runat="server" Text='<%# Bind("Type") %>' />
-                 <br />
                  Description:
                  <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Bind("Description") %>' />
                  <br />
@@ -122,19 +149,12 @@
                  photoDesc:
                  <asp:Label ID="photoDescLabel" runat="server" Text='<%# Bind("photoDesc") %>' />
                  <br />
+                 <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+                 &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+                 &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
              </ItemTemplate>
              </asp:FormView>
-             <asp:DataList ID="photoDataList" runat="server" DataSourceID="SQLDataSource1">
-                 <ItemTemplate>
-                     <a href='<%# Eval("Photo", "~/images/{0}")%>' target="_blank">
-                         <asp:Image ID="Image1" runat="server"
-                             Height="150px"
-                             AlternateText='<%# Eval("photoDesc")%>'
-                             ImageUrl='<%# Eval("Photo", "~/images/{0}")%>'
-                             Tooltip='<%# Eval("photoDesc")%>' />
-                     </a>
-                 </ItemTemplate>
-             </asp:DataList>
+
          
          <br />
          <asp:Label ID="lbl_statement" runat="server"></asp:Label>
