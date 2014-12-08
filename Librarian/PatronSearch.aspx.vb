@@ -9,4 +9,8 @@ Partial Class PatronSearch
 
         SqlDataSource1.SelectCommand = searchword
     End Sub
+
+    Protected Sub Page_PreLoad(sender As Object, e As EventArgs) Handles Me.PreLoad
+        tb_LName.Focus()
+    End Sub
 End Class
