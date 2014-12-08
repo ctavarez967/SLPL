@@ -49,6 +49,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+
                     <li>
                         <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink>
                     </li>
@@ -68,9 +69,8 @@
                     </li>
                     <li>
                         <asp:LoginStatus ID="LoginStatus1" runat="server" />
-                         
                     </li>
-                </ul>
+                 </ul>
            </div>
             <!-- /.navbar-collapse -->
         </div>

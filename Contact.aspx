@@ -9,69 +9,29 @@
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">Contact
-                        <strong>business casual</strong>
+                        <strong>South Liberty Public Library</strong>
                     </h2>
                     <hr>
                 </div>
                 <div class="col-md-8">
                     <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5953.183723820021!2d-91.60398737317695!3d41.75089544291277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e444ad329df611%3A0x729e57340e0a7262!2sNorth+Liberty+Community+Library!5e0!3m2!1sen!2sus!4v1417994126903" width="750" height="450" frameborder="0" style="border:0"></iframe>
                 </div>
                 <div class="col-md-4">
                     <p>Phone:
-                        <strong>123.456.7890</strong>
+                        <strong>319.456.7890</strong>
                     </p>
                     <p>Email:
-                        <strong><a href="mailto:cristian-tavarez@uiowa.edu">name@example.com</a></strong>
+                        <strong><a href="mailto:kyle-boyda@uiowa.edu">SLPL@Library.com</a></strong>
                     </p>
                     <p>Address:
                         <strong>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</strong>
+                            <br>South Liberty, IA 56595</strong>
                     </p>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
-
-        <div class="row">
-            
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Contact
-                        <strong>form</strong>
-                    </h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <label>Name</label>
-                                <input type="text" class="form-control"/>
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control"/>
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control"/>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
-                                <label>Message</label>
-                                <textarea class="form-control" rows="6"></textarea>
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact"/>
-                                <button type="submit" class="btn btn-default">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 
