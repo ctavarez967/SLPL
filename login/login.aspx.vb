@@ -8,24 +8,4 @@ Partial Class login_login
         Login1.Focus()
 
     End Sub
-
-
-    Protected Sub Login1_LoggedIn(sender As Object, e As System.EventArgs) Handles Login1.LoggedIn
-
-        If Roles.IsUserInRole(Login1.UserName, "r_admin") = True Then
-            Response.Redirect("~/admin/default.aspx")
-
-        ElseIf Roles.IsUserInRole(Login1.UserName, "r_Librarian") = True Then
-            Response.Redirect("~/Librarian/default.aspx")
-
-        ElseIf Roles.IsUserInRole(Login1.UserName, "r_User") = True Then
-            Response.Redirect("~/Patron/default.aspx")
-
-        Else : Response.Redirect("default.aspx")
-
-        End If
-
-    End Sub
-
-
 End Class
