@@ -20,12 +20,11 @@
 <br />
 <asp:GridView ID="GridView1" runat="server" cssclass="cssgridview" AutoGenerateColumns="False" DataKeyNames="RentalID" DataSourceID="SqlDataSource1" AllowSorting="True" AllowPaging="True">
     <Columns>
-        <asp:CommandField ShowSelectButton="True" />
-        <asp:BoundField DataField="RentalID" HeaderText="Rental ID" InsertVisible="False" ReadOnly="True" SortExpression="RentalID" />
-        <asp:BoundField DataField="UserID" HeaderText="User ID" SortExpression="UserID" />
-        <asp:BoundField DataField="MaterialID" HeaderText="Material ID" SortExpression="MaterialID" />
-        <asp:BoundField DataField="RentDate" HeaderText="Rental Date" SortExpression="RentDate" />
-        <asp:BoundField DataField="DateDueBack" HeaderText="Due Date" SortExpression="DateDueBack" />
+        <asp:BoundField DataField="RentalID" HeaderText="RentalID" InsertVisible="False" ReadOnly="True" SortExpression="RentalID" />
+        <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
+        <asp:BoundField DataField="MaterialID" HeaderText="MaterialID" SortExpression="MaterialID" />
+        <asp:BoundField DataField="RentDate" HeaderText="RentDate" SortExpression="RentDate" />
+        <asp:BoundField DataField="DateDueBack" HeaderText="DateDueBack" SortExpression="DateDueBack" />
     </Columns>
 </asp:GridView>
 </asp:Content>

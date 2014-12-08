@@ -6,3 +6,4 @@ Partial Class Librarian_ViewAllRentals
         lbl_count.Text = totalRowsCount
     End Sub
 End Class
+

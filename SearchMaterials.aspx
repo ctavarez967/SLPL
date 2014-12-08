@@ -20,7 +20,18 @@
         <asp:TextBox ID="tb_Author" runat="server"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;
          <asp:Button ID="btn_aSearch" runat="server" Text="Search" />
-        <br /><br />
+        <br />
+         <br />
+         Search by Description:<br />
+         <asp:TextBox ID="tb_Description" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;
+         <asp:Button ID="btn_dSearch" runat="server" Text="Search" />
+         <br />
+         <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <asp:Button ID="btn_Clear" runat="server" Text="Clear" />
+         <br />
+         <br />
          <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Title" DataValueField="Author">
          </asp:DropDownList>
         <br />
@@ -44,6 +55,8 @@
         </asp:GridView>
     
         <br />
+         Number of Items:
+         <asp:Label ID="lbl_count" runat="server"></asp:Label>
         <br />
     
     </div>
