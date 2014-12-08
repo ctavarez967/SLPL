@@ -24,8 +24,8 @@
         <br />
         <br />
         <br />
-        No. of Items in this Database:<br />
-        <asp:Label ID="lbl_count" runat="server"></asp:Label>
+        No. of Items in this Database:&nbsp;&nbsp;<asp:Label ID="lbl_count" runat="server"></asp:Label>
+        
         <br />
     
     </div>
