@@ -9,13 +9,14 @@
 <table class="table">   
     
        <tr> 
-           <td><asp:Panel ID="panelLogin" runat="server" DefaultButton="Login1$LoginButton"> 
-            <asp:Login ID="Login1" runat="server" Height="238px" Width="494px" margin="auto"></asp:Login></asp:Panel>
+           <td>
+               <asp:Panel ID="Loginpanel" runat="server" DefaultButton="Login1$LoginButton"> 
+                    <asp:Login ID="Login1" runat="server" Height="238px" Width="494px" margin="auto"></asp:Login>
+               </asp:Panel>
             </td>      
        </tr>
    
 </table>
-
                     <!-- jQuery -->
         <!-- jQuery -->
     <script src="../js/jquery.js"></script>
