@@ -1,14 +1,12 @@
 ﻿Imports System.Data.SqlClient
 
-﻿Imports System.Data.SqlClient
-
 Partial Class Librarian_RentMaterial
     Inherits System.Web.UI.Page
 
     Protected Sub btn_Rent_Click(sender As Object, e As EventArgs) Handles btn_Rent.Click
 
         Dim availab As String
-        Dim sqlConn1 As New SqlConnection(ConfigurationManager.ConnectionStrings("Project_Patrons").ConnectionString)
+        Dim sqlConn1 As New SqlConnection(ConfigurationManager.ConnectionStrings("db_Project_Patron").ConnectionString)
         Dim sqlCmd1 As New SqlCommand
 
         Dim strMaterialId As String = tb_MaterialID.Text
@@ -16,7 +14,7 @@ Partial Class Librarian_RentMaterial
         Dim RentDate As DateTime = DateTime.Now
         Dim DateDueBack As DateTime = DateAdd("d", 30, Today)
 
-        Dim sqlConn As New SqlConnection(ConfigurationManager.ConnectionStrings("Project_Patrons").ConnectionString)
+        Dim sqlConn As New SqlConnection(ConfigurationManager.ConnectionStrings("db_Project_Patron").ConnectionString)
         Dim sqlAdp As New SqlDataAdapter
         Dim sqlCmd As New SqlCommand
         sqlCmd1.Connection = sqlConn1

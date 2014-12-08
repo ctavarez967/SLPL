@@ -1,12 +1,10 @@
 ﻿Imports System.Data.SqlClient
 
-﻿Imports System.Data.SqlClient
-
 Partial Class Librarian_ReturnMaterial
     Inherits System.Web.UI.Page
     Protected Sub btn_Return_Click(sender As Object, e As EventArgs) Handles btn_Return.Click
         Dim strMaterialId As String = tb_MaterialID.Text
-        Dim sqlConn As New SqlConnection(ConfigurationManager.ConnectionStrings("Project_Patrons").ConnectionString)
+        Dim sqlConn As New SqlConnection(ConfigurationManager.ConnectionStrings("db_Project_Patron").ConnectionString)
         Dim sqlAdp As New SqlDataAdapter
         Dim sqlCmd As New SqlCommand
         sqlCmd.Connection = sqlConn
