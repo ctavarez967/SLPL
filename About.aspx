@@ -20,7 +20,7 @@
                     <hr>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                    <img class="img-responsive img-border-left" src="img/Library.jpg" alt="">
                 </div>
                 <div class="col-md-6">
                     <p>This is a great place to introduce your company or project and describe what you do.</p>
@@ -41,26 +41,26 @@
                     <hr>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/Kellen.jpg" alt="">
-                    <h3>   Kellen Roberts
+                    <img class="img-responsive" src="img/Kellen1.jpg" alt="Kellen Roberts">
+                    <h3>Kellen Roberts
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/vinnie pizzo.jpg" alt="">
-                    <h3>   Vincent Pizzo
+                    <img class="img-responsive" src="img/Vinnie1.jpg" alt="Vincent Pizzo">
+                    <h3>Vincent Pizzo
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/Kellen.jpg" alt="">
+                    <img class="img-responsive" src="img/my-obama-me_08-12-14.jpg" alt="Cristian Tavarez">
                     <h3>Cristian Tavarez
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/kyle boyda.jpg" alt="">
-                    <h3>   Kyle Boyda
+                    <img class="img-responsive" src="img/Kyle1.jpg" alt="Kyle Boyda">
+                    <h3>Kyle Boyda
                         <small>Intern</small>
                     </h3>
                 </div>

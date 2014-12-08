@@ -947,6 +947,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+    text-align: justify;
 }
 .img-rounded {
   border-radius: 6px;
