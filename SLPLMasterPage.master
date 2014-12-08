@@ -50,34 +50,25 @@
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                         <a href="default.aspx">Home</a>
+                        <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink>
                     </li>
                     <li>
-                        <a href="about.aspx">About</a>
+                        <asp:HyperLink ID="About" runat="server" NavigateUrl="~/About.aspx">About Us</asp:HyperLink>
                     </li>
                     
                     <li>
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink>
+                        <asp:HyperLink ID="Contact" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" >
-                            <Items>
-                                <asp:MenuItem NavigateUrl="~/Librarian/Default.aspx" Text="Librarian" Value="Librarian"></asp:MenuItem>
-                            </Items>
-                        </asp:Menu>
+                        <asp:HyperLink ID="Librarian" runat="server" NavigateUrl="~/Librarian/default.aspx">Lirarian</asp:HyperLink>
                         
                     </li>
                     <li>
-                        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" >
-                            <Items>
-                                <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Admin" Value="Admin"></asp:MenuItem>
-                            </Items>
-                        </asp:Menu>
+                        <asp:HyperLink ID="Admin" runat="server" NavigateUrl="~/Admin/default.aspx">Admin</asp:HyperLink>
                     </li>
                     <li>
-                        <div class="login_status">
-                            <asp:LoginStatus ID="LoginStatus1" runat="server" />
-                        </div> <!-- close the login_status DIV -->
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                         
                     </li>
                 </ul>
            </div>

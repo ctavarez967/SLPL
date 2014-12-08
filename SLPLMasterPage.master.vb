@@ -7,27 +7,27 @@ Partial Class SLPLMasterPage
 
 
 
-        If Not Roles.IsUserInRole("r_administrator") Then
-            Dim menuItems As MenuItemCollection = Menu2.Items
-            Dim adminItem As New MenuItem()
-            For Each menuItem As MenuItem In menuItems
-                If menuItem.Text = "Admin" Then
-                    adminItem = menuItem
-                End If
-            Next
-            menuItems.Remove(adminItem)
-        End If
+        'If Not Roles.IsUserInRole("r_administrator") Then
+        '    Dim menuItems As MenuItemCollection = Menu2.Items
+        '    Dim adminItem As New MenuItem()
+        '    For Each menuItem As MenuItem In menuItems
+        '        If menuItem.Text = "Admin" Then
+        '            adminItem = menuItem
+        '        End If
+        '    Next
+        '    menuItems.Remove(adminItem)
+        'End If
 
-        If Not Roles.IsUserInRole("r_Librarian") Then
-            Dim menuItems As MenuItemCollection = Menu1.Items
-            Dim adminItem As New MenuItem()
-            For Each menuItem As MenuItem In menuItems
-                If menuItem.Text = "Librarian" Then
-                    adminItem = menuItem
-                End If
-            Next
-            menuItems.Remove(adminItem)
-        End If
+        'If Not Roles.IsUserInRole("r_Librarian") Then
+        '    Dim menuItems As MenuItemCollection = Menu1.Items
+        '    Dim adminItem As New MenuItem()
+        '    For Each menuItem As MenuItem In menuItems
+        '        If menuItem.Text = "Librarian" Then
+        '            adminItem = menuItem
+        '        End If
+        '    Next
+        '    menuItems.Remove(adminItem)
+        'End If
 
         'If Not Roles.IsUserInRole("r_patron") Then
         '    Dim Hyperlink1 As HyperLinkField = Hyperlink1
