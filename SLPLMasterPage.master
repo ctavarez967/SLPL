@@ -29,7 +29,7 @@
 
 <body>
     <form id="form1" runat="server">
-    <div class="brand">South Liberty Public Liberty</div>
+    <div class="brand">South Liberty Public Library</div>
     <div class="address-bar">3481 Melrose Place | South Liberty, IA 56595 | 319.456.7890</div>
 
     <!-- Navigation -->
