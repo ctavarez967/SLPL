@@ -48,42 +48,57 @@
               &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
           </EditItemTemplate>
           <InsertItemTemplate>
-              Type:
-            <asp:TextBox ID="TypeTextBox" runat="server" Text='<%# Bind("Type") %>' />
-            <br />
-              Title:
-            <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
-             <asp:RequiredFieldValidator ID="RFV1" runat="server" ErrorMessage="Please enter the Title of the material" CssClass="validationError" ControlToValidate="TitleTextBox"></asp:RequiredFieldValidator>
-            <br />
-              Author:
-            <asp:TextBox ID="AuthorTextBox" runat="server" Text='<%# Bind("Author") %>' />
-            <br />
-              Publisher:
-            <asp:TextBox ID="PublisherTextBox" runat="server" Text='<%# Bind("Publisher") %>' />
-            <br />
-              Copyright:
-            <asp:TextBox ID="CopyrightTextBox" runat="server" Text='<%# Bind("Copyright") %>' />
-            <br />
-              ISBN:
-            <asp:TextBox ID="ISBNTextBox" runat="server" Text='<%# Bind("ISBN") %>' />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the material's ISBN" CssClass="validationError" ControlToValidate="ISBNTextBox"></asp:RequiredFieldValidator>
-            <br />
-              Call_Number:
-            <asp:TextBox ID="Call_NumberTextBox" runat="server" Text='<%# Bind("Call_Number") %>' />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter the material's Call Number" CssClass="validationError" ControlToValidate="Call_NumberTextBox"></asp:RequiredFieldValidator>
-              <br />
-              Description:
-            <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
-            <br />
-              Photo:
-            <asp:TextBox ID="PhotoTextBox" runat="server" Text='<%# Bind("Photo") %>' />
-            <br />
-              photoDesc:
-            <asp:TextBox ID="photoDescTextBox" runat="server" Text='<%# Bind("photoDesc") %>' />
-            <br />
-              Available:
-            <asp:TextBox ID="AvailableTextBox" runat="server" Text='<%# Bind("Available") %>' />
-            <br />
+              <table>
+              <tr><td style="text-align:right;">Type:</td>
+            <td style="text-align:left;"><asp:TextBox ID="TypeTextBox" runat="server" Text='<%# Bind("Type") %>' /></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">Title:</td>
+            <td style="text-align:left;"><asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' /></td>
+             <td style="text-align:left;"><asp:RequiredFieldValidator ID="RFV1" runat="server" ErrorMessage="Please enter the Title of the material" CssClass="validationError" ControlToValidate="TitleTextBox"></asp:RequiredFieldValidator></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">Author:</td>
+            <td style="text-align:left;"><asp:TextBox ID="AuthorTextBox" runat="server" Text='<%# Bind("Author") %>' /></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">Publisher:</td>
+            <td style="text-align:left;"><asp:TextBox ID="PublisherTextBox" runat="server" Text='<%# Bind("Publisher") %>' /></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">Copyright:</td>
+            <td style="text-align:left;"><asp:TextBox ID="CopyrightTextBox" runat="server" Text='<%# Bind("Copyright") %>' /></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">ISBN:</td>
+            <td style="text-align:left;"><asp:TextBox ID="ISBNTextBox" runat="server" Text='<%# Bind("ISBN") %>' /></td>
+            <td style="text-align:left;"><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the material's ISBN" CssClass="validationError" ControlToValidate="ISBNTextBox"></asp:RequiredFieldValidator></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">Call_Number:</td>
+            <td style="text-align:left;"><asp:TextBox ID="Call_NumberTextBox" runat="server" Text='<%# Bind("Call_Number") %>' /></td>
+            <td style="text-align:left;"><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter the material's Call Number" CssClass="validationError" ControlToValidate="Call_NumberTextBox"></asp:RequiredFieldValidator></td>
+              </tr>
+                  <br />
+              <tr><td style="text-align:right;">Description:</td>
+            <td style="text-align:left;"><asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' /></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">Photo:</td>
+            <td style="text-align:left;"><asp:TextBox ID="PhotoTextBox" runat="server" Text='<%# Bind("Photo") %>' /></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">photoDesc:</td>
+            <td style="text-align:left;"><asp:TextBox ID="photoDescTextBox" runat="server" Text='<%# Bind("photoDesc") %>' /></td>
+            </tr>
+                  <br />
+              <tr><td style="text-align:right;">Available:</td>
+            <td style="text-align:left;"><asp:TextBox ID="AvailableTextBox" runat="server" Text='<%# Bind("Available") %>' /></td>
+            </tr>
+                  <br />
+                  </table>
+
+
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
           </InsertItemTemplate>

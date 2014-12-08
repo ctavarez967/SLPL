@@ -66,8 +66,8 @@
         </asp:GridView>
     
         <br />
-         Number of Items:
-         <asp:Label ID="lbl_count" runat="server"></asp:Label>
+         <h4>Number of Items:
+         <asp:Label ID="lbl_count" runat="server"></asp:Label></h4>
         <br />
     
     </div>
