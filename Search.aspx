@@ -4,18 +4,22 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-     <div>
+     <div style="margin-left: 40px">
     
-        <% If Not IsPostBack Then%>
+        
 
 
         Search by Title:<br />
         <asp:TextBox ID="tb_Title" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;
+         <asp:Button ID="btn_tSearch" runat="server" Text="Search" />
         <br />
         <br />
-        <% Else%>
+   
         Search by Author:<br />
         <asp:TextBox ID="tb_Author" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;
+         <asp:Button ID="btn_aSearch" runat="server" Text="Search" />
         <br />
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT * FROM [Project_Materials]"></asp:SqlDataSource>
@@ -31,7 +35,7 @@
                 <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="~/Librarian/MaterialDetails.aspx?ID={0}" Text="View" />
             </Columns>
         </asp:GridView>
-        <%End If%>
+    
         <br />
         <br />
     

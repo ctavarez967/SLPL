@@ -5,33 +5,40 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
      <div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT [ID], [Type], [Title], [Author], [Publisher], [Copyright], [ISBN], [Call_Number], [Description], [Photo], [photoDesc] FROM [Project_Materials] WHERE ([ID] = @ID)" DeleteCommand="DELETE FROM [Project_Materials] WHERE [ID] = @ID" InsertCommand="INSERT INTO [test_Materials] ([ID], [Type], [CallNumber], [Title], [Author], [Publisher], [Copyright], [ISBN], [Availability]) VALUES (@ID, @Type, @CallNumber, @Title, @Author, @Publisher, @Copyright, @ISBN, @Availability)" UpdateCommand="UPDATE [Project_Materials] SET [Type] = @Type, [CallNumber] =@CallNumber, [Title] = @Title, [Author] = @Author, [Publisher] = @Publisher, [Copywrite] = @Copywrite, [ISBN] = @ISBN, [Availability] = @Availability WHERE [ID] = @ID">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" 
+            SelectCommand="SELECT [ID], [Type], [Title], [Author], [Publisher], [Copyright], [ISBN], [Call_Number], [Description], [Photo], [photoDesc] 
+            FROM [Project_Materials] WHERE ([ID] = @ID)" 
+            DeleteCommand="DELETE FROM [Project_Materials] WHERE [ID] = @ID" 
+            InsertCommand="INSERT INTO [Project_Materials] ([Type], [Call_Number], [Title], [Author], [Publisher], [Copyright], [ISBN]) 
+            VALUES (@Type, @Call_Number, @Title, @Author, @Publisher, @Copyright, @ISBN)" 
+            UpdateCommand="UPDATE [Project_Materials] 
+            SET [Type] = @Type, [Call_Number] =@Call_Number, [Title] = @Title, [Author] = @Author, [Publisher] = @Publisher, [Copywrite] = @Copywrite, [ISBN] = @ISBN WHERE [ID] = @ID">
             <DeleteParameters>
                 <asp:Parameter Name="ID" />
             </DeleteParameters>
             <InsertParameters>
                 <asp:Parameter Name="ID" />
                 <asp:Parameter Name="Type" />
-                <asp:Parameter Name="CallNumber" />
+                <asp:Parameter Name="Call_Number" />
                 <asp:Parameter Name="Title" />
                 <asp:Parameter Name="Author" />
                 <asp:Parameter Name="Publisher" />
                 <asp:Parameter Name="Copyright" />
                 <asp:Parameter Name="ISBN" />
-                <asp:Parameter Name="Availability" />
+                
             </InsertParameters>
             <SelectParameters>
                 <asp:QueryStringParameter DefaultValue="" Name="ID" QueryStringField="ID" Type="Int32" />
             </SelectParameters>
             <UpdateParameters>
                 <asp:Parameter Name="Type" />
-                <asp:Parameter Name="CallNumber" />
+                <asp:Parameter Name="Call_Number" />
                 <asp:Parameter Name="Title" />
                 <asp:Parameter Name="Author" />
                 <asp:Parameter Name="Publisher" />
                 <asp:Parameter Name="Copywrite" />
                 <asp:Parameter Name="ISBN" />
-                <asp:Parameter Name="Availability" />
+                
                 <asp:Parameter Name="ID" />
             </UpdateParameters>
         </asp:SqlDataSource>
