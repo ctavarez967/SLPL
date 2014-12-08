@@ -20,4 +20,17 @@ Partial Class Search
 
         SqlDataSource1.SelectCommand = searchword
     End Sub
+
+    Protected Sub btn_dSearch_Click(sender As Object, e As EventArgs) Handles btn_dSearch.Click
+        Dim searchword As String
+
+        searchword = "Select * From Project_Materials where (Description Like '%" + tb_Description.Text.ToString() + "%')"
+
+        SqlDataSource1.SelectCommand = searchword
+    End Sub
+
+    Protected Sub btn_Clear_Click(sender As Object, e As EventArgs) Handles btn_Clear.Click
+        Response.Redirect(Request.RawUrl)
+
+    End Sub
 End Class
