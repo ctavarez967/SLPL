@@ -4,7 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-
+    <script src="../js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
 
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT [PatronID], [PatronLast], [PatronFirst], [DateAdded], [CheckedOut], [OverdueCharges], [Address], [DateOfBirth], [City], [State], [Zip], [PhoneNumber], [Email] 
