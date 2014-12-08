@@ -5,11 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
      <div>
-    
-        <br />
-        <br />
-        <br />
-    
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT * FROM [Project_Materials]" DeleteCommand="DELETE FROM [Project_Materials] WHERE [ID] = @ID" InsertCommand="INSERT INTO [Project_Materials] ([Type], [Title], [Author], [Publisher], [Copyright], [ISBN], [Call_Number], [Description]) VALUES (@Type, @Title, @Author, @Publisher, @Copyright, @ISBN, @Call_Number, @Description)" UpdateCommand="UPDATE [Project_Materials] SET [Type] = @Type, [Title] = @Title, [Author] = @Author, [Publisher] = @Publisher, [Copyright] = @Copyright, [ISBN] = @ISBN, [Call_Number] = @Call_Number, [Description] = @Description WHERE [ID] = @ID">
             <DeleteParameters>
                 <asp:Parameter Name="ID" Type="Int32" />
@@ -36,17 +31,7 @@
                 <asp:Parameter Name="ID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-
-         <asp:DataList ID="materialsPhotoDataList" runat="server" DataSourceID="SqlDataSource1">
-         <ItemTemplate>
-             <image ID="Image1" runat="server" 
-                 Height="150px"
-                 AlternateText='<%# Eval("photoDesc")%>'
-                 ImageUrl='<%# Eval("Photo", "~/images/{0}")%>' 
-                 Tooltip='<%# Eval("photoDesc") %>'/>
-         </ItemTemplate>
-         </asp:DataList>
-        <br />
+                 <br />
          <asp:FormView ID="FormView1" runat="server" AllowPaging="True" DataKeyNames="ID" DataSourceID="SqlDataSource1">
              <EditItemTemplate>
                  ID:
@@ -140,7 +125,19 @@
                  &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
                  &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
              </ItemTemplate>
-         </asp:FormView>
+             </asp:FormView>
+             <asp:DataList ID="photoDataList" runat="server" DataSourceID="SQLDataSource1">
+                 <ItemTemplate>
+                     <a href='<%# Eval("Photo", "~/images/{0}")%>' target="_blank">
+                         <asp:Image ID="Image1" runat="server"
+                             Height="150px"
+                             AlternateText='<%# Eval("photoDesc")%>'
+                             ImageUrl='<%# Eval("Photo", "~/images/{0}")%>'
+                             Tooltip='<%# Eval("photoDesc")%>' />
+                     </a>
+                 </ItemTemplate>
+             </asp:DataList>
+         
          <br />
          <asp:Label ID="lbl_statement" runat="server"></asp:Label>
 
