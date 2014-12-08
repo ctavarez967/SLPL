@@ -23,9 +23,9 @@
                     <img class="img-responsive img-border-left" src="img/Library.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <p>This is a great place to introduce your company or project and describe what you do.</p>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>The South Liberty Public Library (SLPL) was established in 1896 to serve the people of South Liverty, Iowa.</p>
+                    <p>Currently located in a new facility at the intersection of Melrose and Linn Streets on the downtown pedestrian mall, SLPL serves a population 69,000 residents of South Liberty</p>
+                    <p>SLPL employs over 100 full, part-time and hourly workers, and has over 430 volunteers that perform a wide variety of tasks. It is governed by a nine-member Board of Trustees which is appointed by the South Liberty City Council.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -41,25 +41,25 @@
                     <hr>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/Kellen1.jpg" alt="Kellen Roberts">
+                    <img class="img-responsive" src="img/Kellen1.jpg" alt="Kellen Roberts"/>
                     <h3>Kellen Roberts
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/Vinnie1.jpg" alt="Vincent Pizzo">
+                    <img class="img-responsive" src="img/Vinnie1.jpg" alt="Vincent Pizzo"/>
                     <h3>Vincent Pizzo
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/my-obama-me_08-12-14.jpg" alt="Cristian Tavarez">
+                    <img class="img-responsive" src="img/my-obama-me_08-12-14.jpg" alt="Cristian Tavarez"/>
                     <h3>Cristian Tavarez
                         <small>Developer</small>
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/Kyle1.jpg" alt="Kyle Boyda">
+                    <img class="img-responsive" src="img/Kyle1.jpg" alt="Kyle Boyda"/>
                     <h3>Kyle Boyda
                         <small>Intern</small>
                     </h3>
