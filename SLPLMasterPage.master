@@ -77,10 +77,15 @@
                                <li>
                                    <asp:HyperLink runat="server" NavigateUrl="~/librarian/PatronTable.aspx">View Patrons</asp:HyperLink></li>
                                <li class="divider"></li>
+<<<<<<< HEAD
                                <li>
                                    <asp:HyperLink runat="server" NavigateUrl="~/librarian/addNewMaterial.aspx">Add New Material</asp:HyperLink></li>
                                <li>
                                    <asp:HyperLink runat="server" NavigateUrl="~/librarian/MaterialsTable.aspx">View Material</asp:HyperLink></li>
+=======
+                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/AddMaterial.aspx">Add New Material</asp:HyperLink></li>
+                               <li><asp:HyperLink runat="server" NavigateUrl="~/librarian/MaterialsTable.aspx">View Material</asp:HyperLink></li>
+>>>>>>> 38343c516c0c9a159c1372d107cd5768c4b4fa12
                                
                             </ul>
                         </li>
