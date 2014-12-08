@@ -10,7 +10,7 @@ Partial Class Librarian_RentMaterial
         Dim sqlCmd1 As New SqlCommand
 
         Dim strMaterialId As String = tb_MaterialID.Text
-        Dim strUserName As String = tb_Username.Text
+        Dim strUserName As String = tb_UserName.Text
         Dim RentDate As DateTime = DateTime.Now
         Dim DateDueBack As DateTime = DateAdd("d", 30, Today)
 
@@ -39,7 +39,7 @@ Partial Class Librarian_RentMaterial
         End If
     End Sub
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        tb_Username.Focus()
+        tb_UserName.Focus()
     End Sub
 End Class
 

@@ -9,10 +9,8 @@
     
     <p>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_Project_Patron %>" SelectCommand="SELECT * FROM [Project_Rentals]"></asp:SqlDataSource>
-    </p>
-    <p>
         Username:
-        <asp:TextBox ID="tb_Username" runat="server"></asp:TextBox>
+        <asp:TextBox ID="tb_UserName" runat="server"></asp:TextBox>
     </p>
     <p>
         Material ID:&nbsp;

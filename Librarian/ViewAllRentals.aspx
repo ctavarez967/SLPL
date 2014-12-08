@@ -21,7 +21,7 @@
 <asp:GridView ID="GridView1" runat="server" cssclass="cssgridview" AutoGenerateColumns="False" DataKeyNames="RentalID" DataSourceID="SqlDataSource1" AllowSorting="True" AllowPaging="True">
     <Columns>
         <asp:BoundField DataField="RentalID" HeaderText="RentalID" InsertVisible="False" ReadOnly="True" SortExpression="RentalID" />
-        <asp:BoundField DataField="PatronID" HeaderText="PatronID" SortExpression="PatronID" />
+        <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
         <asp:BoundField DataField="MaterialID" HeaderText="MaterialID" SortExpression="MaterialID" />
         <asp:BoundField DataField="RentDate" HeaderText="RentDate" SortExpression="RentDate" />
         <asp:BoundField DataField="DateDueBack" HeaderText="DateDueBack" SortExpression="DateDueBack" />
